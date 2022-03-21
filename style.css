@@ -1,0 +1,210 @@
+:root {
+  --greyblu: rgba(68, 88, 119, 1);
+  --lightblu: rgba(146, 204, 206, 1);
+  --gry: rgba(49, 52, 61, 1);
+  --blk: rgba(28, 29, 33, 1);
+  --wht: rgba(238, 238, 247, 1);
+}
+
+body {
+    background-color: var(--wht);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--blk);
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--gry);
+    height: 6em;
+    position: relative;
+  }
+  
+header h1 {
+    color: var(--gry);
+    background-color: var(--lightblu);
+    font-size: 50px;
+    padding: 5px 1% 5px 5%;
+    text-align: end;
+    white-space: nowrap;
+    display: inline;
+}
+
+nav{
+    margin-right: 18px;
+}  
+
+nav a {
+    color: var(--lightblu);
+    text-decoration: underline 5px;
+    font-size: 21px ;
+    margin-bottom: 100px ;
+    text-underline-offset: 8px;
+}
+  
+nav li {
+    padding: 5px 10px;
+    font-size: 25px;
+    display: inline;
+    
+ }
+
+#topimg{
+     position: relative;
+ }
+
+#topimg img {
+    height: 15em;
+    width: 100%;
+}
+
+#topimg p {
+    position: absolute;
+    color: black;
+    background-color: var(--lightblu);
+    font-size: 40px ;
+    bottom: 8px;
+    right: 16px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    color: var(--greyblu);
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    height: 28vh;
+    padding: 20px 0;
+}
+
+#abody {
+    border-right: 4px solid var(--greyblu);
+    text-align: end;
+    font-size: 45px;
+}
+
+#abody h2 {
+    margin: 0 0px 0 0 ;
+    padding: 0 17px 0 130px;
+}
+
+#ap {
+    padding: 0px 7% 0 60px;
+    font-size: 17px;
+}
+
+#work {
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    height: 115vh;
+    position: relative;
+}
+
+#workh {
+    width: 32%;
+    border-right: 4px solid var(--greyblu);
+    text-align: end;
+    font-size: 60px;
+}
+
+#workh h3{
+    margin: 0 15px 0 0 ;
+    padding: 0 0 0 150px;
+}
+
+#workimgs{
+   width: 100%;
+   height: 100%;
+   padding: 0px 3% 30px 60px;
+}
+
+#biggerimg {
+    width: 93%;
+    height: 25em;
+    border: 6px solid var(--lightblu);
+}
+
+#bigboy p {
+    position: absolute;
+    color: black;
+    background-color: var(--lightblu);
+    font-size: 100px ;
+    top: 80px;
+}
+
+#images {
+    display: flex;
+    position: relative;
+}
+
+#images img {
+    width: 28.135em;
+    height: 13em;
+    border: 6px solid var(--lightblu);
+    margin: 17px 17px 0 0 ; 
+}
+
+.imgtxt {
+    position: absolute;
+    color: black;
+    background-color: var(--lightblu);
+    font-size: 50px ;
+    top: 50px;
+}
+
+.imgtext {
+    position: absolute;
+    color: black;
+    background-color: var(--lightblu);
+    font-size: 50px ;
+    top: 290px;
+}
+
+#contact {
+    display: flex;
+    width: 100%;
+    height: 9em;
+    padding: 30px 0 60px 0;
+    position: relative;
+}
+
+#conbod {
+    padding: 0px 10px 0px 30px;
+    text-align: end;
+    font-size: 50px;
+    border-right: 4px solid var(--greyblu);
+}
+
+#conbod h3 {
+        margin: 0 0px 0 0 ;
+        padding: 0 8px 0 75px;
+}
+
+#list {
+    margin: 20px;
+    width: 100%;
+}
+
+#list ul {
+    color: var(--greyblu);
+    font-size: 21px ;
+    margin-bottom: 100px ;
+    text-underline-offset: 8px;
+    
+}
+
+#list li {
+    padding: 5px 10px;
+    font-size: 25px;
+    display: inline;
+    text-decoration: underline 5px;
+    margin: 0px 12px ;
+}
