@@ -8,41 +8,33 @@
 
 body {
     background-color: var(--wht);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS',;
     color: var(--blk);
-    padding: 0%;
     margin: 0%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     background-color: var(--gry);
-    height: 6em;
+    height: auto;
     position: relative;
+    padding: 15px 0px;
   }
   
 header h1 {
     color: var(--gry);
     background-color: var(--lightblu);
     font-size: 50px;
-    padding: 5px 1% 5px 5%;
-    text-align: end;
-    white-space: nowrap;
-    display: inline;
+    text-align: end;   
+    
 }
-
-nav{
-    margin-right: 18px;
-}  
 
 nav a {
     color: var(--lightblu);
     text-decoration: underline 5px;
     font-size: 30px ;
-    margin-bottom: 100px ;
     text-underline-offset: 8px;
     padding: 9px 0px ;
     margin: 0 15px ;
@@ -50,7 +42,6 @@ nav a {
 }
   
 nav li {
-    font-size: 25px;
     display: inline;
  }
 
@@ -88,10 +79,10 @@ main {
     color: var(--greyblu);
 }
 
-#about {
+#about{
     width: 100%;
     display: flex;
-    height: 28vh;
+    height: auto;
     padding: 20px 0;
 }
 
@@ -99,11 +90,12 @@ main {
     border-right: 4px solid var(--greyblu);
     text-align: end;
     font-size: 45px;
+    width: auto;
 }
 
 #abody h2 {
-    margin: 0 0px 0 0 ;
-    padding: 0 17px 0 130px;
+    margin: 0;
+    padding: 0 17px 0 139px;
 }
 
 #ap {
@@ -115,12 +107,12 @@ main {
     width: 100%;
     display: flex;
     padding: 20px 0;
-    height: 115vh;
+    height: auto;
     position: relative;
 }
 
 #workh {
-    width: 32%;
+    width: auto;
     border-right: 4px solid var(--greyblu);
     text-align: end;
     font-size: 60px;
@@ -133,13 +125,16 @@ main {
 
 #workimgs{
    width: 100%;
-   height: 100%;
+   height: auto;
    padding: 0px 3% 30px 60px;
+   position: relative;
 }
 
 #biggerimg {
-    width: 93%;
-    height: 25em;
+    width: 57.8em;
+    height: 20em;
+    max-width: 100%;
+    max-height:100% ;
     border: 6px solid var(--lightblu);
 }
 
@@ -147,28 +142,48 @@ main {
     position: absolute;
     color: black;
     background-color: var(--lightblu);
-    font-size: 100px ;
     top: 80px;
+    font-size: 100px;
+    width: auto;
+    max-width: 20em;
+    max-height: auto;
+    margin-left: 6px;
+}
+
+#bigboy p:hover{
+    color: var(--greyblu);
+    background-color: var(--wht);
+    opacity: .8;
 }
 
 #images {
     display: flex;
     position: relative;
+    height: auto;
+    width: 100%;
 }
 
+.right {
+    margin-left: 15px;
+} 
+
 #images img {
-    width: 28.135em;
-    height: 13em;
+    height: 20rem;
     border: 6px solid var(--lightblu);
-    margin: 17px 17px 0 0 ; 
+    width: 28.05em;
+    margin: 10px 0px 0px 0px;
+    max-width: 100%;
+    max-height:100%;
 }
+
 
 .imgtxt {
     position: absolute;
     color: black;
     background-color: var(--lightblu);
     font-size: 50px ;
-    top: 50px;
+    top: 150px;
+    margin-left:6px ;
 }
 
 .imgtext {
@@ -176,13 +191,20 @@ main {
     color: black;
     background-color: var(--lightblu);
     font-size: 50px ;
-    top: 290px;
+    top: 500px;
+    margin-left:6px 
+}
+
+#images div p:hover{
+    color: var(--greyblu);
+    background-color: var(--wht);
+    opacity: .8;
 }
 
 #contact {
     display: flex;
     width: 100%;
-    height: 9em;
+    height: auto;
     padding: 30px 0 60px 0;
     position: relative;
 }
@@ -192,16 +214,18 @@ main {
     text-align: end;
     font-size: 50px;
     border-right: 4px solid var(--greyblu);
+    width: auto;
 }
 
 #conbod h3 {
         margin: 0 0px 0 0 ;
-        padding: 0 8px 0 75px;
+        padding: 0 8px 0 91px;
 }
 
 #list {
     margin: 20px;
-    width: 100%;
+    width: 92em;
+    height: auto;
 }
 
 #list ul {
@@ -209,7 +233,8 @@ main {
     font-size: 21px ;
     margin-bottom: 100px ;
     text-underline-offset: 9px;
-    
+    justify-content: space-between;
+    line-height: 2;
 }
 
 #list li {
@@ -244,14 +269,16 @@ main {
     
     header {
         display: block;
-        height: 11em;
+        height: auto;
         position: relative;
         width: 100%;
+        line-height:1.5;
     }
 
     header h1 {
         display: block;
         text-align: center;
+        padding: 20px;
     }
 
     nav {
@@ -259,23 +286,23 @@ main {
         text-align: center;
     }
 
-    main{
+    main {
         position: relative;
     }
 
     #about {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 55px;
+        display: block;
+        height: auto;
+        position: relative;
         width: 100%;
     }
 
     #abody {
-        border-bottom: 3px solid var(--greyblu) ;
-        margin: 0 3%;
-        border-right: 0px;
-        padding-right: 55px ;
         text-align: center;
+        border-right: 0px;
+        padding-right: 120px;
+        border-bottom: 3px solid var(--greyblu);
+        margin: 3%;
     }
 
     #ap {
@@ -283,59 +310,88 @@ main {
     }
 
     #work {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 55px;
+        display: block;
+        height: auto;
+        position: relative;
         width: 100%;
-        height: 100%;
     }
 
     #workh {
-        border-bottom: 3px solid var(--greyblu);
-        border-right: 0px;
-        padding-right: 55px ;
         text-align: center;
-        width: 90%;
-        margin: 1% 3%;
-    }
-
-    #workh h3 {
-        padding-right: 90px;
+        border-right: 0px;
+        padding-right: 120px;
+        border-bottom: 3px solid var(--greyblu);
+        margin: 3%;
     }
 
     #workimgs {
-        width: 100%;
-        padding: 0;
+        position: relative;
+        width: auto;
+        align-items: center;
     }
 
-    #bigboy {
-        width: 51.3%;
-        margin-left: 250px;
-        padding-top: 10px;
+    #workimgs img {
+        width: 90%;
+        height: 10em;
+        max-width: 100%;
+        max-height:100%;
+    }
+
+    #biggerimg{
+        width: 20em;
+    }
+
+    #bigboy p {
+        font-size: 50px;
+        top:15px
     }
 
     #images {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-left: 35px ;
+    }
+
+    .right {
+        margin: 0;
+    }
+    #imgtext1 {
+        position: absolute;
+        top: 25px;
+    }
+
+    #imgtext2 {
+        position: absolute;
+        top: 210px;
+    }
+
+    #imgtext3 {
+        position: absolute;
+        top: 400px;
+    }
+
+    #imgtext4{
+        position: absolute;
+        top: 580px;
     }
 
     #contact {
-        display: flex;
-        flex-direction: column;
-    }
-    #conbod {
-        text-align: center;
-        padding-right: 100px;
-        border-right: 0px;
-        border-bottom: 3px solid var(--greyblu);
-        margin: 0 5% ;
+        display: block;
+        height: auto;
+        position: relative;
+        width: 100%;
     }
 
-    #list li {
-        font-size: 20px;
-        margin-right: 20px;
+    #conbod {
+        text-align: center;
+        border-right: 0px;
+        padding-right: 120px;
+        border-bottom: 3px solid var(--greyblu);
+        margin: 3%;
     }
-    
+
+    #list {
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
 }
