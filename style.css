@@ -12,7 +12,7 @@ body {
     color: var(--blk);
     margin: 0%;
 }
-
+/* overall header body */
 header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
     position: relative;
     padding: 15px 0px;
   }
-  
+  /* name within header */
 header h1 {
     color: var(--gry);
     background-color: var(--lightblu);
@@ -30,7 +30,7 @@ header h1 {
     text-align: end;   
     
 }
-
+/* navbar clickable links */
 nav a {
     color: var(--lightblu);
     text-decoration: underline 5px;
@@ -44,13 +44,14 @@ nav a {
 nav li {
     display: inline;
  }
-
+/* how links act when hovered over */
 nav a:hover {
     background-color: var(--lightblu);
     color: var(--gry);
-    text-decoration-color: var(--lightblu)
+    text-decoration-color: var(--lightblu);
+    cursor: pointer;
  }
-
+/* decoration image */
 #topimg{
      position: relative;
  }
@@ -59,7 +60,7 @@ nav a:hover {
     height: 15em;
     width: 100%;
 }
-
+/* text within decoration image */
 #topimg p {
     position: absolute;
     color: black;
@@ -72,7 +73,7 @@ nav a:hover {
     margin: 0;
     opacity: .5;
 }
-
+/* container main content */
 main {
     position: relative;
     width: 100%;
