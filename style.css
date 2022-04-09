@@ -101,7 +101,7 @@ main {
 
 #ap {
     padding: 0px 7% 0 60px;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 #work {
@@ -220,7 +220,7 @@ main {
 
 #conbod h3 {
         margin: 0 0px 0 0 ;
-        padding: 0 8px 0 91px;
+        padding: 0 0px 0 91px;
 }
 
 #list {
@@ -231,7 +231,6 @@ main {
 
 #list ul {
     color: var(--greyblu);
-    font-size: 21px ;
     margin-bottom: 100px ;
     text-underline-offset: 9px;
     justify-content: space-between;
@@ -240,7 +239,7 @@ main {
 
 #list li {
     padding: 5px 10px;
-    font-size: 25px;
+    font-size: 30px;
     display: inline;
     text-decoration: underline 5px;
     margin: 0px 12px ;
